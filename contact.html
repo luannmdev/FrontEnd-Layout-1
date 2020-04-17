@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Porfolio</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="software engineer, font end designer, front end deverloper, ...">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=vietnamese" rel="stylesheet">
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Format for header -->
+        <header>
+            <nav id="main_nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="./project.html">My Experience</a>
+                    </li>
+                    <li>
+                        <a class="link_button" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>CONTACT ME</h1>
+            <h3>Select your convinent way to keep in touch with me</h3>
+        </header>
+
+        <section id="contact_wrapper">
+            <section id="contact_form">
+                <form action="/" method="post" autocomplete="off">
+                    <fieldset id="basic_info">
+                        <legend>
+                            <span class="number">1</span> Basic Info
+                        </legend>
+                        <label for="name">Your name:</label>
+                        <input required type="text" id="name" placeholder="Input your full name" maxlength="30">
+                        <label for="email">Your Email:</label>
+                        <input required type="email" id="email" placeholder="email@address.com">
+                        
+                        <label>You are:</label>
+                        <input name="you_are" type="radio" checked id="individual">
+                        <label class="light" for="individual">Individual</label>
+                        <input name="you_are" type="radio" id="corporate">
+                        <label class="light" for="corporate">Corporate</label>
+                        
+                        <label for="why_contact">Why do you contact me?</label>
+                        <textarea id="why_contact" cols="50" rows="10"></textarea>
+                    </fieldset>
+                    <fieldset id="about_you">
+                        <legend>
+                            <span class="number">2</span> About You
+                        </legend>
+                        <label for="your_url">What is your website?</label>
+                        <input type="url" id="your_url">
+                        
+                        <label>What are aeras if your project?</label>
+                        <input type="checkbox"><label class="light">Health Care</label>
+                        <input type="checkbox"><label class="light">Finance</label>
+                        <input type="checkbox"><label class="light">Education</label>
+                        
+                        <label>How many people in your company?</label>
+                        <select>
+                            <option selected>1 - 10</option>
+                            <option>11 - 20</option>
+                            <option>21 - 50</option>
+                            <option>More than 50</option>
+                        </select>
+                        
+                        <label>What is your role?</label>
+                        <select>
+                            <optgroup label="Web">
+                                <option>Web Developer</option>
+                                <option>Web Designer</option>
+                                <option>Full-Stack Web Developr</option>
+                            </optgroup>
+                            <optgroup label="Architect">
+                                <option>Software Architect</option>
+                                <option>Datebase Architect</option>
+                                <option>System Architect</option>
+                                <option>Other</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <button type="submit">Contact me</button>
+                    <button type="reset">Clear</button>
+                </form>
+                <address id="call_me">
+                    <span id="phone_number">
+                        <i class="fa fa-phone"></i>01636-80-82-88
+                    </span>
+                </address>
+            </section>
+        </section>
+       
+        
+        <footer>
+            <p>
+                &copy; 2016 - Anh Đẹp Trai
+            </p>
+            <p id="footer_father">
+                <span style="color: red" class="footer_element"><i class="fa fa-google-plus" aria-hidden="true"></i> Google+</span>
+                <span style="color: blue" class="footer_element"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</span>
+                <span style="color: #1b95e0" class="footer_element"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</span>
+                
+            </p>
+        </footer>
+    </body>
+</html>
